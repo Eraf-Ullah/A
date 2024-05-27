@@ -1,0 +1,104 @@
+/* Custom styles for the website */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background:  no-repeat center center/cover;
+    color: black;
+    padding: 100px 0;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card-body .btn {
+    transition: background-color 0.3s ease;
+}
+
+.card-body .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Testimonials Section */
+.testimonials .card {
+    border: none;
+    background-color: #f8f9fa;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #f8f9fa;
+}
+
+.newsletter .form-control {
+    max-width: 400px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+.footer h5 {
+    color: #343a40;
+}
+
+.footer a {
+    color: #343a40;
+}
+
+.footer a:hover {
+    color: #0056b3;
+}
+
+/* Social Media Buttons */
+.footer .btn {
+    margin-right: 5px;
+}
+
+
+
